@@ -1,11 +1,18 @@
 # Bookscan OCR
 
-`bookscan-ocr` は、ローカルに保存されたスキャンPDFを一括処理し、検索可能なPDFを生成するコマンドラインツールです。PDFの処理とテキスト層の生成には [OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF) を使用します。OCRエンジンは、GPUを利用するPaddleOCRプラグインと、CPUで動作するTesseractから選択できます。
+> **スキャンした書籍PDFをローカルで一括OCRし、検索可能なPDFを作成します。**
+
+[![Tests](https://github.com/k-sunako/bookscan-ocr/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/k-sunako/bookscan-ocr/actions/workflows/tests.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+| GPU OCR | CPU OCR | 元PDFを保護 |
+| --- | --- | --- |
+| PaddleOCRプラグイン | Tesseract | 元ファイルは変更せず、別ディレクトリへ出力 |
+
+`bookscan-ocr` は、[OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF) を利用するコマンドラインツールです。PDFを外部のOCRサービスへ送らず、手元のLinux環境でまとめて処理できます。
 
 ## 主な機能
 
 - 入力ディレクトリ以下のPDFを再帰的に検索して一括処理
-- PaddleOCRプラグインによるGPU OCR、またはTesseractによるCPU OCR
 - 元PDFを保持し、別の出力ディレクトリに結果を作成
 - ドライラン、既存ファイルのスキップ、明示的な上書き
 - `qpdf` と `pdftotext` が利用可能な場合の出力検査
