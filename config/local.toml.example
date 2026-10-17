@@ -1,0 +1,14 @@
+# Copy this file to config/local.toml and edit the paths. config/local.toml is gitignored.
+[paths]
+input_dir = "/home/your-user/Books/to-ocr"
+output_dir = "/home/your-user/Books/searchable"
+
+[ocr]
+engine = "paddle"
+language = "jpn"
+use_gpu = true
+jobs = 1
+pdfa = true
+skip_text = true
+deskew = false
+rotate_pages = false

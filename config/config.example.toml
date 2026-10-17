@@ -1,0 +1,16 @@
+[paths]
+# Replace these sample paths in config/local.toml. Keep input and output separate.
+input_dir = "/path/to/books/inbox"
+output_dir = "/path/to/books/searchable"
+
+[ocr]
+# "paddle" uses the OCRmyPDF-PaddleOCR plugin; "tesseract" uses the default OCRmyPDF engine.
+engine = "paddle"
+# Paddle plugin README maps jpn to Japanese. It may use only the first language in a list.
+language = "jpn"
+use_gpu = true
+jobs = 1
+pdfa = true
+skip_text = true
+deskew = false
+rotate_pages = false

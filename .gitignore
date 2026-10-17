@@ -1,0 +1,22 @@
+# Personal/local configuration and document data
+config/local.toml
+.env
+/data/
+/input/
+/output/
+/models/
+/cache/
+/logs/
+*.pdf
+!tests/fixtures/*.pdf
+
+# Python/build/editor artifacts
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.coverage
+.pytest_cache/
+.ruff_cache/
