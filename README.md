@@ -4,6 +4,8 @@
 
 [![Tests](https://github.com/k-sunako/bookscan-ocr/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/k-sunako/bookscan-ocr/actions/workflows/tests.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+**本プロジェクトはPipaliにより作成されました。**
+
 | GPU OCR | CPU OCR | 元PDFを保護 |
 | --- | --- | --- |
 | PaddleOCRプラグイン | Tesseract | 元ファイルは変更せず、別ディレクトリへ出力 |
